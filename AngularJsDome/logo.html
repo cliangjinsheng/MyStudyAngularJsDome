@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#logo{
+				width:400px;
+				height: 400px;
+				border: 1px solid #444;
+				position: relative;
+			}
+			#head{
+				width:200px;
+				height:200px;
+				position: absolute;
+				border: 10px solid #444444;
+				border-bottom: 8px solid #444444;
+				border-radius: 50%;
+				left:90px;
+				top:90px;
+				
+			}
+			#headtit{
+				position: absolute;
+				width:260px;
+				height: 20px;
+				border: 10px solid #444444;
+				border-bottom: 8px solid #444444;
+				left:60px;
+				top:200px;
+				background: #fff;
+			}
+			#headtit:before{
+				content: '';
+				display: block;
+				position: absolute;
+				width:40px;
+				height: 40px;
+				border: 8px solid #444444;
+				top:0;
+				left:50px;
+				z-index: -1;
+				border-bottom-left-radius: 50%;
+				border-bottom-right-radius: 50%;
+			}
+			#headtit:after{
+				content: '';
+				display: block;
+				position: absolute;
+				width:40px;
+				height: 40px;
+				border: 8px solid #444444;
+				top:0;
+				right:50px;
+				z-index: -1;
+				border-bottom-left-radius: 50%;
+				border-bottom-right-radius: 50%;
+			}
+			#logo p{
+				display: block;
+				position: absolute;
+				width: 0;
+				height: 40px;
+				border:4px solid #444444;
+				top:70px;
+				right:80px;
+			}
+			#logo p:after{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 40px;
+				border:4px solid #444444;
+				top:-4px;
+				left:10px;
+			}
+			#logo p:before{
+				content: '';
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 40px;
+				border:4px solid #444444;
+				top:-4px;
+				right:10px;
+			}
+			
+			#headtit b{
+				display: block;
+				position: absolute;
+				border:4px solid #444444;
+				width: 20px;
+				height: 20px;
+				top:12px;
+				border-radius: 50%;
+				left:64px;
+				z-index: -1;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='logo'>
+			<p></p>
+			<div id="head"></div>
+			<div id="headtit">
+				<b></b>
+			</div>
+		</div>
+	</body>
+</html>
